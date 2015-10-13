@@ -1,5 +1,6 @@
 package apps.freetime.evention;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -30,6 +31,15 @@ public class DefaultDisplayActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        }else if(id == R.id.contact_us){
+            final Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
+
+            emailIntent.setType("plain/text");
+            emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"to@email.com"});
+            emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject");
+            emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Text");
+
+            startActivity(Intent.createChooser(emailIntent, "Send mail..."));
         }
 
         return super.onOptionsItemSelected(item);

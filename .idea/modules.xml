@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Soph-seminar.iml" filepath="$PROJECT_DIR$/Soph-seminar.iml" />
       <module fileurl="file://$PROJECT_DIR$/SophomoreSeminar.iml" filepath="$PROJECT_DIR$/SophomoreSeminar.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
